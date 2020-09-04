@@ -1,0 +1,30 @@
+{
+    "name": "lanxr/weather",
+    "description": "Amap weather SDK.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "lanxr",
+            "email": "lxr4437@163.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Lanxr\\Weather\\": "./src/"
+        }
+    },
+    "require": {
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.3",
+        "mockery/mockery": "^1.4"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Lanxr\\Weather\\ServiceProvider"
+            ]
+        }
+    }
+}
